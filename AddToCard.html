@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+</head>
+
+<body>
+    <!-- create a navbar  -->
+
+    <navbar class="navbarElement">
+        <script src="src/navebar.js"></script>
+    </navbar>
+
+    <!-- end navbar -->
+
+    <section>
+        <div class="ItemContainer">
+        </div>
+    </section>
+
+    <!-- create a template -->
+
+    <template id="pTemplate">
+        <div id="product">
+            <article>
+                <div class="card">
+                    <div class="categorySection">
+                    </div>
+                    <div class="imageSection">
+                        <img src="" id="imgSection" width="250px" height="200px" />
+                    </div>
+                    <div class="priceSection">
+                    </div>
+                    <div class="add-remove-Item">
+                        <div class="add-button">
+                            +
+                        </div>
+                        <div class="quantityNumber">
+                            1
+                        </div>
+                        <div class="remove-button">
+                            -
+                        </div>
+                        <button id="removeData">
+                            Remove
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </template>
+
+
+    <!--  create a total selected product box  -->
+
+    <section>
+        <div class="selected-product">
+            <h1>
+                Selected Item Table
+            </h1>
+            <div class="total-item">
+                <div class="product-name">
+                    Total Product
+                </div>
+                <div class="total-amount">
+                    0
+                </div>
+                <div class="product-payment">
+                    <h2>Payment</h2>
+                </div>
+                <div class="price">
+                    $150
+                </div>
+            </div>
+            <div class="Total-payment">
+                <h2>
+                    Total Payment
+                </h2>
+                <div class="product-price">
+                    0
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section ">
+        <script src="/src/fotter.js"></script>
+    </footer>
+</body>
+
+
+<!-- add javaScript -->
+
+<script type="module" src="src/addToCardItem.js"></script>
+
+</html>

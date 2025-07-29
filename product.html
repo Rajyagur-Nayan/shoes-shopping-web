@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | NR Shoes</title>
+    <link rel="stylesheet" href="src/product.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--  navbar -->
+    <navbar class="navbarElement">
+        <script src="src/navebar.js"></script>
+    </navbar>
+
+
+
+    <section class="product-section">
+        <div class="productData"></div>
+    </section>
+
+    <template id="openTemplate">
+        <article class="product-card">
+            <div class="parts">
+                <div class="product-image">
+                    <img src="/" alt="Product Image" class="productImage" />
+                </div>
+                <div class="product-details">
+                    <h1 id="category">Running Shoes</h1>
+                    <p class="price">₹1499</p>
+                    <span class="old-price">₹1999</span>
+                    <p class="description">
+                        Lightweight, comfortable, and durable running shoes perfect for daily workouts or casual wear.
+                    </p>
+                    <div class="size-options">
+                        <label>Select Size:</label>
+                        <select>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    <div class="quantity">
+                        <label>Quantity:</label>
+                        <input type="number" value="1" min="1" id="quantity" />
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </article>
+    </template>
+
+
+    <footer class="footer-section ">
+        <script src="/src/fotter.js"></script>
+    </footer>
+
+</body>
+<script type="module" src="/src/main.js">
+</script>
+<script type="module" src="/src/openProduct.js">
+</script>
+
+</html>

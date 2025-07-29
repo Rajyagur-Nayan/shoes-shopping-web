@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/src/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NR Shoes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+  <div class="main">
+
+    <!--  create a navbar  -->
+    <navbar class="navbarElement">
+      <script src="src/navebar.js"></script>
+    </navbar>
+
+    <!-- details part -->
+
+    <div class="container">
+      <div class="left-part">
+        <h2>
+          <p>
+            Explore the latest Product
+          </p>
+          <p id="pStyle">
+            Your Destination For
+            <br />
+            Latest Shoes
+          </p>
+        </h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis molestiae harum qui animi illo
+          praesentium vero provident nemo quos, assumenda facere saepe, fugiat, et aliquam. Cum sit quaerat quisquam
+          neque?
+          Possimus iure aperiam eum dolores odio, consequuntur, ea corporis harum placeat magnam ex nostrum ab numquam
+          quaerat molestiae dolor libero saepe sed magni nobis? Asperiores eveniet ut repellendus porro assumenda.
+        </p>
+        <button>
+          Explore Our Product
+        </button>
+      </div>
+      <div class="right-part">
+        <img src="/public/images/img1.webp" />
+      </div>
+    </div>
+
+    <!-- Product list  -->
+
+    <div class="product-list">
+      <h2>
+        Our Products
+      </h2>
+      <section class="content">
+        <div id="productContainer"></div>
+      </section>
+
+      <template id="productTemplate">
+        <div id="productId">
+          <article>
+            <div class="category"></div>
+            <div class="img">
+              <a href="">
+                <img class="productImg" src="" width="250px" height="200px" />
+              </a>
+            </div>
+            <div class="discretion">
+            </div>
+            <div class="price">
+              <div class="Offer-price"></div>
+              <div class="main-price"></div>
+            </div>
+            <div class="total-stock">
+              <p>Total Stock Available : </p>
+            </div>
+            <div class="quantity">
+              <p>Quantity is </p>
+              <div class="add-remove">
+                <div class="increment">
+                  <button>
+                    +
+                  </button>
+                </div>
+                <div>
+                  <p id="productQuantity">1</p>
+                </div>
+                <div class="decrement">
+                  <button>
+                    -
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="Add-to-card">
+              Add to cart
+            </button>
+          </article>
+        </div>
+      </template>
+    </div>
+  </div>
+
+  <!-- footer section  -->
+
+  <footer class="footer-section ">
+    <script src="/src/fotter.js"></script>
+  </footer>
+
+
+  <!-- javascript add -->
+
+  <script type="module" src="/src/main.js">
+  </script>
+
+</body>
+
+
+</html>
